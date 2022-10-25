@@ -20,7 +20,7 @@ nav{
 </div>
 <div class="navbar-menu" id="nav-links">
   <div class="navbar-start">
-    <a class="navbar-item is-hoverable" href="home.html" id="home-page">
+    <a class="navbar-item is-hoverable" href="index.html" id="home-page">
       Home
     </a>
   
