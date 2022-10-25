@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Favorited Giveaways</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" href="styles/myStyles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+  <script type="module" src="src/init.js"></script>
+  <script type="module" src="src/favorites.js"></script>
+
+</head>
+<body>
+  <app-navbar data-currentpage="favorites-page"> </app-navbar>
+
+  
+<!-- Main Page -->
+<main>
+  <div class="has-background-black-bis mr-1 p-1"> 
+    <div class="is-large p-4">
+      <!-- Row #1 -->
+      <app-header>
+        <span slot="my-title">Favorites</span>
+        <span slot="my-subtitle">Here is all the giveaways that you have favorited</span>
+      </app-header>
+      
+      <!-- Row #2  -->
+      <div class="box has-background-black-bis has-text-centered">
+        <div class="control is-inline-block mt-3">
+          <button
+            id="btn-clearFavorites"
+            class="button is-primary is-medium"
+            title="Clear favorites"
+          >Clear Favorites</button>
+        </div>
+      </div>
+
+      <!-- Row #3 -->
+      <div class="box has-background-dark"> 
+        <div class="is-large p-1">
+          <p id="element-status-favorites" class="has-text-success mb-2">No favorites yet</p>
+          <div id="element-card-holder-favorites">
+            <!-- Favorites go here! -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <app-footer>
+      <span slot="my-footer"><span>&copy;</span>2022 Jiabao Su, RIT</span>
+    </app-footer>
+  </div>
+</main>
+
+</body>
+</html>

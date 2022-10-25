@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find Giveaways</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" href="styles/myStyles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+  <script type="module" src="src/init.js"></script>
+  <script type="module" src="src/app.js"></script>
+
+</head>
+<body>
+  
+  <app-navbar data-currentpage="app-page"> </app-navbar>
+
+  <!-- Main Page -->
+
+  <main>
+    <div class="has-background-black-bis">
+      <div class="is-large p-4">
+        <!-- Row #1 -->
+        <app-header>
+          <span slot="my-title">Giveaway Galore</span>
+        </app-header>
+
+        <!-- Row #2 - Instructions-->
+        <div class="box mt-2 has-background-warning">
+          <p class="mb-5 has-text-centered has-text-weight-bold px-3">
+            Welcome to the giveaway search. Begin by clicking search to get every
+            giveaway available.<br> Use the filters below to find specific giveaways.
+            Enjoy all your free stuff!
+          </p>
+
+          <!-- Row #2 - Controls-->
+          <div id="box-controls" class="box has-text-centered has-background-grey-lighter mx-4">
+            <div class="control is-inline-block pd-2">
+              <span class="subtitle has-text-weight-bold">Platform:</span>
+              <div class="select is-rounded is-info">
+                <select id="field-platform" class="select is-primary is-small">
+                  <option value="all">All</option>
+                  <option value="pc">PC</option>
+                  <option value="steam">Steam</option>
+                  <option value="epic-games-store">Epic Games Store</option>
+                  <option value="ubisoft">Ubisoft</option>
+                  <option value="gog">GOG</option>
+                  <option value="itchio">Itchio</option>
+                  <option value="ps4">Ps4</option>
+                  <option value="ps5">Ps5</option>
+                  <option value="xbox-360">Xbox 360</option>
+                  <option value="xbox-one">Xbox One</option>
+                  <option value="xbox-series-xs">Xbox Series X</option>
+                  <option value="switch">Nintendo Switch</option>
+                  <option value="android">Android</option>
+                  <option value="ios">Ios</option>
+                  <option value="vr">VR</option>
+                  <option value="battlenet">Battlenet</option>
+                  <option value="origin">Origin</option>
+                  <option value="drm-free">Drm free</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="control is-inline-block p-2">
+              <span class="subtitle has-text-weight-bold">Type:</span>
+              <div class="select is-rounded is-info">
+                <select id="field-type" class="select is-primary is-small">
+                  <option value="all">All</option>
+                  <option value="game">Games</option>
+                  <option value="loot">Loot</option>
+                  <option value="beta">Betas</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="control is-inline-block p-2">
+              <span class="subtitle has-text-weight-bold">Sort By:</span>
+              <div class="select is-rounded is-info">
+                <select id="field-sort" class="select is-primary is-small">
+                  <option value="date">Date</option>
+                  <option value="value">Value</option>
+                  <option value="popularity">Popularity</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="control is-inline-block mx-4">
+              <button
+                id="btn-search"
+                class="button is-primary is-medium"
+                title="Search for giveaways"
+              >Search!</button>
+            </div>
+            
+            <div class="control is-inline-block mx-4">
+              <button
+                id="btn-clear-all"
+                class="button is-danger is-medium"
+                title="Clear all Results"
+              >Clear</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row #3 - Results-->
+          <div class="box has-background-dark">
+            <div class="is-large p-1">
+              <h2 class="subtitle has-text-weight-bold mb-2 mt-0 has-text-light">My Results</h2>
+              <p id="element-status" class="has-text-success mb-2">Click the <b>Search</b> button to view giveaways</p>
+              <div id="element-card-holder">
+              </div>
+            </div>
+          </div>
+      </div>
+      <app-footer>
+        <span slot="my-footer"><span>&copy;</span>2022 Jiabao Su, RIT</span>
+      </app-footer>
+    </div>
+  </main>
+
+</body>
+</html>

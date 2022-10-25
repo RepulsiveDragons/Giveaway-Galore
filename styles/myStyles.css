@@ -1,0 +1,22 @@
+
+select#field-limit{
+    width:2.5rem;
+}
+h2.subtitle{
+    font-family:'Underdog',sans-serif;
+}
+#element-card-holder, #element-card-holder-community, #element-card-holder-favorites{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+    grid-gap: 0.5em;
+}
+#giftbox-image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    width: 50%;
+    height: 50%;
+}
+

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giveaway Galore Home Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" href="styles/myStyles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+  <script type="module" src="src/init.js"></script>
+
+
+</head>
+<body>
+
+  <app-navbar data-currentpage="home-page"> </app-navbar>
+  <!-- product info-->
+
+      <div class="columns is-vcentered">
+        <div class="column">  
+          <div class="hero is-large has-background-black-bis">
+            <div class="hero-head">
+              <app-header>
+                <span slot="my-title">Giveaway Galore</span>
+                <span slot="my-subtitle">Thousands of giveaways are happening at any given moment but it can be hard to track or even find one. 
+                  This app will allow you to search for active game related giveaways. It will show you details of the giveaway
+                  and will have a link so you can join the giveaway immediately. You'll also be able to favorite giveaways so 
+                  you can easily keep track of ones that you are participating in.</span>
+              </app-header>
+            </div>
+
+
+            <img id="giftbox-image" src="images/gift-boxes-transparent-compressed.png" alt="Gifts">
+
+
+            <div class="hero-footer">
+              <app-footer>
+                <span slot="my-footer"><span>&copy;</span>2022 Jiabao Su, RIT</span>
+              </app-footer>
+            </div>
+          </div>
+        </div>
+      </div>
+
+</body>
+</html>

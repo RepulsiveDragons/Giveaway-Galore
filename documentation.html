@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documentation</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" href="styles/myStyles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+  <script type="module" src="src/init.js"></script>
+</head>
+<body>
+  <app-navbar data-currentpage="documentation-page"> </app-navbar>
+  <!-- Main Page -->
+  <main>
+    <div class="has-background-black-bis mr-1 p-1"> 
+      <div class="is-large p-4">
+        <!-- Row #1 -->
+        <app-header>
+          <span slot="my-title">Giveaway Galore Documentation</span>
+        </app-header>
+        
+        <!-- Row #2  -->
+        <div class="box mt-2">
+          <div class="box">
+            <h2 class="title has-text-weight-bold ">Proposal</h2>
+            <h2 class="subtitle has-text-weight-bold mb-0">API</h2>
+            <p>The api I am using is GamerPowers giveaway api. It allows anyone to access the best 
+              giveaway in gaming including beta keys and in-game loot. The api doc can be accessed <a href="https://www.gamerpower.com/api-read">here.</a>
+            </p>
+            
+            <h2 class="subtitle has-text-weight-bold mt-5 mb-0">Features</h2>
+            <p>The main feature of my app is to display a list of all the giveaways available through the api.
+              There will be filter options that the user can select to narrow down the searches. The app will allow
+              the user to choose what platform the giveaway is for, the type of giveaway it is (eg: game, beta keys, loot)
+              and then the user can sort the results by its date, value, or popularity. The app will show all the available 
+              giveaways that match the search filters and give information on each giveaway. It will include a link to the 
+              giveaway so the user can easily enter. Lastly the user can favorite an individual giveaway as to keep
+              track of it and it will show up in the favorites page so they can easily check up on its status. The app will 
+              also include a page that shows what giveaways other users who used the page have liked to be able to 
+              see whats popular among app users.
+            </p>
+
+            <h2 class="subtitle has-text-weight-bold mt-5 mb-0">Low-Fidelity Interface</h2>
+            <img src="images/low-fidelity-interface.png" alt="low-fidelity sketch">
+          </div>
+
+          <div class="content mt-2">
+            <h2 class="subtitle has-text-weight-bold mb-1">Project Requirements</h2>
+            <a class="mx-5" href="https://github.com/tonethar/IGME-330-Fall-2022/blob/main/projects/p1-checkpoint-2.md#desktop-sources-screenshots">Project 1 Requirements</a>
+
+            <h2 class="subtitle has-text-weight-bold mb-1 mt-6">Resources Utilized</h2>
+            <ul class="mx-5">
+              <li><a href="https://bulma.io/documentation/">Bulma Docs</a></li>
+              <li><a href="https://stackoverflow.com/questions/73999293/firebaseerror-firebase-need-to-provide-options-when-not-being-deployed-to-hos">Firebase Error</a></li>
+              <li><a href="https://www.w3schools.com/">w3schools for various html, css, and javascript help</a></li>
+            </ul>
+
+            <h2 class="subtitle has-text-weight-bold mb-1 mt-6">API</h2>
+            <a class="mx-5" href="https://www.gamerpower.com/api-read">API Home and documentation</a>
+
+            <h2 class="subtitle has-text-weight-bold mb-1 mt-6">Noteworthy</h2>
+            <ul>
+              <li>Used bulma to style pretty much everything</li>
+              <li>Web componets were utilized in every page</li>
+              <li>Each page uses it's own unique card component</li>
+              <li>Getting data from the api using fetch</li>
+              <li>App page preserves your searchs</li>
+              <li>Utilizes a realtime database to read and write some information</li>
+            </ul>
+
+            <h2 class="subtitle has-text-weight-bold mb-1 mt-6">Grading</h2>
+            <ul>
+              <li>Used bulma to style the web app</li>
+              <li>Includes all 4 necessary pages</li>
+              <li>Has at least four web components</li>
+              <li>Uses local storage to preserve search fields</li>
+              <li>Can add and remove favorites</li>
+              <li>favorites are stored in local storage and is displayed</li>
+              <li>Uses firebase to display a like counter</li>
+            </ul>
+            <h5>Above and beyond</h5>
+            <ul>
+              <li>Three different card components</li>
+              <li>Local storage also preserves the results</li>
+              <li>You can remove each favorite component individually</li>
+              <li>Favorite button stays disabled if its in the favorite list</li>
+            </ul>
+
+            <h2 class="subtitle has-text-weight-bold mb-1 mt-6">To Do</h2>
+            <ul>
+              <li>Add more firebase controls</li>
+              <li>Have pages for the results when there are too many results</li>
+              <li>Update colors and layout</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <app-footer>
+        <span slot="my-footer"><span>&copy;</span>2022 Jiabao Su, RIT</span>
+      </app-footer>
+    </div>
+  </main>
+
+</body>
+</html>
