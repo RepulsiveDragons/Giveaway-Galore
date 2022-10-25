@@ -9,7 +9,7 @@ nav{
 </style>
 <nav class="navbar has-shadow is-black">
 <div class="navbar-brand">
-  <a class="navbar-item" href="home.html">
+  <a class="navbar-item" href="index.html">
     <i class="fas fa-gift"></i>
   </a>
   <a class="navbar-burger" id="burger">
